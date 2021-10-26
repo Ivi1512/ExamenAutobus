@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo"
+    tools:context=".MainActivity2">
+
+    <EditText
+        android:id="@+id/edtPrecioAutobus2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="7dp"
+        android:layout_marginTop="36dp"
+        android:ems="10"
+        android:hint="@string/precio_del_autobus"
+        android:textColorHint="#00695C"
+        android:importantForAutofill="no"
+        android:inputType="numberDecimal"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.079"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="TextContrastCheck" />
+
+    <Button
+        android:id="@+id/bt_Aplicar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/aplicar"
+        android:onClick="Aplicar"
+        app:layout_constraintBaseline_toBaselineOf="@+id/edtPrecioAutobus2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toEndOf="@+id/edtPrecioAutobus2" />
+
+    <TextView
+        android:id="@+id/txtNumViajeros2"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="175dp"
+        android:gravity="center_vertical"
+        android:text="@string/numero_de_viajeros2"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtPrecioAutobus2"
+        tools:ignore="TextContrastCheck" />
+
+    <TextView
+        android:id="@+id/txtPrecioViaje2"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center_vertical"
+        android:text="@string/precio_del_viaje2"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/txtNumViajeros2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/txtNumViajeros2"
+        app:layout_constraintTop_toBottomOf="@+id/txtNumViajeros2" />
+
+    <TextView
+        android:id="@+id/txtIngresos2"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center_vertical"
+        android:text="@string/ingresos"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/txtPrecioViaje2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/txtPrecioViaje2"
+        app:layout_constraintTop_toBottomOf="@+id/txtPrecioViaje2"
+        tools:ignore="TextContrastCheck" />
+
+    <TextView
+        android:id="@+id/txtGastos2"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center_vertical"
+        android:text="@string/gastos"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/txtIngresos2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/txtIngresos2"
+        app:layout_constraintTop_toBottomOf="@+id/txtIngresos2"
+        tools:ignore="TextContrastCheck" />
+
+    <TextView
+        android:id="@+id/txtTotal2"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center_vertical"
+        android:text="@string/total"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/txtGastos2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/txtGastos2"
+        app:layout_constraintTop_toBottomOf="@+id/txtGastos2"
+        tools:ignore="TextContrastCheck" />
+
+    <TextView
+        android:id="@+id/txtValorNumPasajeros2"
+        android:layout_width="134dp"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/txtNumViajeros2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/txtNumViajeros2"
+        app:layout_constraintTop_toTopOf="@+id/txtNumViajeros2" />
+
+    <TextView
+        android:id="@+id/txtValorPrecioViaje2"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:gravity="center"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/txtPrecioViaje2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/txtPrecioViaje2"
+        app:layout_constraintTop_toTopOf="@+id/txtPrecioViaje2" />
+
+    <TextView
+        android:id="@+id/txtValorIngresos2"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:gravity="center"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/txtIngresos2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/txtIngresos2"
+        app:layout_constraintTop_toTopOf="@+id/txtIngresos2" />
+
+    <TextView
+        android:id="@+id/txtValorGastos2"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:gravity="center"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/txtGastos2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/txtGastos2"
+        app:layout_constraintTop_toTopOf="@+id/txtGastos2" />
+
+    <TextView
+        android:id="@+id/txtValorTotal2"
+        android:layout_width="134dp"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/txtTotal2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/txtTotal2"
+        app:layout_constraintTop_toTopOf="@+id/txtTotal2" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">ExamenAutobus</string>
+    <string name="siguiente">Siguiente</string>
+    <string name="autobus">Autobus</string>
+    <string name="mostrar_ingresos">Mostrar Ingresos</string>
+    <string name="numero_de_viajeros">Número de viajeros</string>
+    <string name="precio_del_viaje">Precio del viaje</string>
+    <string name="precio_del_autobus">Precio del autobus</string>
+    <string name="precio_del_viaje2">Precio del viaje</string>
+    <string name="ingresos">Ingresos</string>
+    <string name="gastos">Gastos</string>
+    <string name="total">Total</string>
+    <string name="numero_de_viajeros2">Número de viajeros</string>
+    <string name="aplicar">Aplicar</string>
+</resources>
